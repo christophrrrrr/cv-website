@@ -1,0 +1,203 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* General Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#--------
+
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+
+#-------------
+
+/* Home Section */
+#home {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 80vh;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+#home a {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#home a:hover {
+    background: #e68a00;
+}
+
+#-----------
+
+/* About Section */
+#about {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#--------
+
+/* Experience and Education */
+#experience, #education {
+    background: #f9f9f9;
+    padding: 50px 20px;
+}
+
+#experience h2, #education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experience ul, #education ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#experience ul li, #education ul li {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#experience ul li h3, #education ul li h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+#-------
+
+/* Skills Section */
+#skills {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills ul li {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+#--------
+
+/* Contact Section */
+#contact {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#------
+
