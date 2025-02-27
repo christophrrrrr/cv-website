@@ -10,8 +10,8 @@ body, h1, h2, h3, p, ul, li, a {
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #1E1E2F;  /* Consistent Dark Navy */
+    color: #FFFFFF;  /* White Text */
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -24,12 +24,9 @@ body {
     padding: 20px;
 }
 
-#--------
-
-
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #2D2D44;  /* Slightly Lighter Dark */
     color: white;
     padding: 10px 0;
     position: sticky;
@@ -55,149 +52,147 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #CED4DA;  /* Light Gray */
 }
-
-
-#-------------
 
 /* Home Section */
 #home {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background: #1E1E2F;  /* Consistent Dark Background */
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    min-height: 80vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home-content {
+    max-width: 800px;
 }
 
 #home h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 10px;
+    color: #FFFFFF;
 }
 
 #home p {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #CED4DA;
 }
 
 #home a {
+    color: #ADB5BD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home a:hover {
+    text-decoration: underline;
+}
+
+.download-cv {
     display: inline-block;
-    background: #ff9800;
-    color: white;
+    background: #2D2D44;
+    color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s;
+    margin-top: 20px;
 }
 
-#home a:hover {
-    background: #e68a00;
+.download-cv:hover {
+    background: #495057;
+    color: #FFFFFF;
 }
 
-#-----------
-
-/* About Section */
-#about {
-    background: white;
+/* Consistent Section Backgrounds */
+section {
+    background: #1E1E2F;  /* Same Dark Background */
     padding: 50px 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+section h2 {
     text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
-#about h2 {
-    margin-bottom: 20px;
-}
-
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-#--------
-
-/* Experience and Education */
-#experience, #education {
-    background: #f9f9f9;
-    padding: 50px 20px;
-}
-
-#experience h2, #education h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#experience ul, #education ul {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#experience ul li, #education ul li {
-    background: white;
+/* Consistent Block Styles */
+.entry-block {
+    background: #2D2D44;  /* Slightly Lighter Dark */
+    padding: 20px;
     margin: 15px 0;
-    padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-#experience ul li h3, #education ul li h3 {
+.entry-block h3 {
+    color: #ADB5BD;
     margin-bottom: 10px;
-    color: #333;
 }
 
-
-#-------
-
-/* Skills Section */
-#skills {
-    background: white;
-    padding: 50px 20px;
-    text-align: center;
+.entry-block ul {
+    padding-left: 20px;
+    line-height: 1.6;
 }
 
-#skills h2 {
-    margin-bottom: 20px;
+.entry-block p {
+    color: #CED4DA;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
-#skills ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Specific Section Adjustments */
+#education h2, 
+#experience h2, 
+#extracurricular h2, 
+#languages h2, 
+#additional-info h2 {
+    color: #FFFFFF;
 }
 
-#skills ul li {
-    background: #ff9800;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 30px;
-    font-weight: bold;
+.education-entry,
+.experience-entry,
+.extracurricular-entry,
+.languages-entry,
+.additional-info-entry {
+    background: #2D2D44;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-
-#--------
-
-/* Contact Section */
-#contact {
-    background: #333;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+.education-entry h3,
+.experience-entry h3,
+.extracurricular-entry h3,
+.languages-entry h3,
+.additional-info-entry h3 {
+    color: #ADB5BD;
+    margin-bottom: 10px;
 }
 
-#contact h2 {
-    margin-bottom: 20px;
+.education-entry ul,
+.experience-entry ul,
+.extracurricular-entry ul,
+.languages-entry ul,
+.additional-info-entry ul {
+    padding-left: 20px;
+    line-height: 1.6;
 }
 
-#contact a {
-    color: #ff9800;
-    text-decoration: none;
-    font-weight: bold;
+.education-entry p,
+.experience-entry p,
+.extracurricular-entry p,
+.languages-entry p,
+.additional-info-entry p {
+    color: #CED4DA;
 }
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-#------
-
