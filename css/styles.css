@@ -1,3 +1,27 @@
+/* Default Theme */
+:root {
+    --background-color: #1E1E2F;
+    --text-color: #FFFFFF;
+    --block-background: #2D2D44;
+    --link-color: #ADB5BD;
+    --hover-link-color: #CED4DA;
+    --button-background: #2D2D44;
+    --button-hover-background: #495057;
+    --button-text-color: #FFFFFF;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --background-color: #FFFFFF;
+    --text-color: #1E1E2F;
+    --block-background: #F1F3F5;
+    --link-color: #0D6EFD;
+    --hover-link-color: #0A58CA;
+    --button-background: #ADB5BD;
+    --button-hover-background: #6C757D;
+    --button-text-color: #1E1E2F;
+}
+
 /* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
@@ -10,8 +34,8 @@ body, h1, h2, h3, p, ul, li, a {
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1E1E2F;  /* Consistent Dark Navy */
-    color: #FFFFFF;  /* White Text */
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -26,8 +50,8 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #2D2D44;  /* Slightly Lighter Dark */
-    color: white;
+    background-color: var(--block-background);
+    color: var(--text-color);
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -45,20 +69,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #CED4DA;  /* Light Gray */
+    color: var(--hover-link-color);
 }
 
 /* Home Section */
 #home {
-    background: #1E1E2F;  /* Consistent Dark Background */
-    color: white;
+    background: var(--background-color);
+    color: var(--text-color);
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -74,17 +98,17 @@ nav ul li a:hover {
 #home h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 #home p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #CED4DA;
+    color: var(--hover-link-color);
 }
 
 #home a {
-    color: #ADB5BD;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -93,10 +117,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Download CV Button */
 .download-cv {
     display: inline-block;
-    background: #2D2D44;
-    color: #FFFFFF;
+    background: var(--button-background);
+    color: var(--button-text-color);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -106,27 +131,27 @@ nav ul li a:hover {
 }
 
 .download-cv:hover {
-    background: #495057;
-    color: #FFFFFF;
+    background: var(--button-hover-background);
+    color: var(--button-text-color);
 }
 
 /* Consistent Section Backgrounds */
 section {
-    background: #1E1E2F;  /* Same Dark Background */
+    background: var(--background-color);
     padding: 50px 20px;
     text-align: left;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 section h2 {
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-bottom: 30px;
 }
 
 /* Consistent Block Styles */
 .entry-block {
-    background: #2D2D44;  /* Slightly Lighter Dark */
+    background: var(--block-background);
     padding: 20px;
     margin: 15px 0;
     border-radius: 5px;
@@ -134,7 +159,7 @@ section h2 {
 }
 
 .entry-block h3 {
-    color: #ADB5BD;
+    color: var(--link-color);
     margin-bottom: 10px;
 }
 
@@ -144,7 +169,7 @@ section h2 {
 }
 
 .entry-block p {
-    color: #CED4DA;
+    color: var(--hover-link-color);
     font-style: italic;
     margin-bottom: 10px;
 }
@@ -155,7 +180,7 @@ section h2 {
 #extracurricular h2, 
 #languages h2, 
 #additional-info h2 {
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .education-entry,
@@ -163,8 +188,8 @@ section h2 {
 .extracurricular-entry,
 .languages-entry,
 .additional-info-entry {
-    background: #2D2D44;
-    color: #FFFFFF;
+    background: var(--block-background);
+    color: var(--text-color);
     padding: 20px;
     margin: 15px 0;
     border-radius: 5px;
@@ -176,23 +201,20 @@ section h2 {
 .extracurricular-entry h3,
 .languages-entry h3,
 .additional-info-entry h3 {
-    color: #ADB5BD;
+    color: var(--link-color);
     margin-bottom: 10px;
 }
 
-.education-entry ul,
-.experience-entry ul,
-.extracurricular-entry ul,
-.languages-entry ul,
-.additional-info-entry ul {
-    padding-left: 20px;
-    line-height: 1.6;
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.education-entry p,
-.experience-entry p,
-.extracurricular-entry p,
-.languages-entry p,
-.additional-info-entry p {
-    color: #CED4DA;
+.theme-toggle:hover {
+    color: var(--hover-link-color);
 }
